@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% form_theme editForm 'bootstrap_4_layout.html.twig' %}
+{% block title %}Edit a post{% endblock %}
+
+{% block body %}
+    <h1>Edit a post</h1>
+    {{ form_start(editForm) }}
+    {{ form_widget(editForm) }}
+        <button class="btn btn-success mt-5">Edit</button>
+    {{ form_end(editForm) }}
+{% endblock %}
